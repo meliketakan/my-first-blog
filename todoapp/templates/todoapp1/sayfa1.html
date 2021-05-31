@@ -1,0 +1,52 @@
+<div class="text-center">
+<br>
+<h1>SAYFA1</h1>
+<br>
+
+</div>
+
+<div class="text-center">Aşağıdaki formu doldurarak bizimle iletişime geçebilirsin.💙</div>
+
+<br>
+
+
+<main class="container push-top" id="home-body-id">
+<form action= "/sayfa1" name="contactUs" id="contactUs" class="mesajform" novalidate="novalidate" data-error-dir="up" data-focusout="false" data-keyup="false" data-click="false">
+{{form}} {% csrf_token %}
+<div class="form-group" >
+
+        <label for="Name">Adınız Soyadınız: </label>
+        <input type="text" name="text"maxlength="50" class="form-control" data-validate="{&quot;required&quot;:[true, &quot;Adınızı giriniz.&quot;]}" aria-required="true">
+</div>
+
+<div class="form-group">
+        <label for="Email">E-Posta:</label>
+        <input type="email" name="Email" maxlength="50" class="form-control" data-validate="{&quot;required&quot;:[true, &quot;E-posta adresinizi giriniz.&quot;], &quot;email&quot;: [true, &quot;Geçerli bir e-posta adresi giriniz.&quot;]}" aria-required="true">
+</div>
+
+<div class="form-group">
+        <label for="Description">Konu:</label>
+        <textarea name="hidden1" id="Description" rows="1" class="form-control" style="resize:none;" data-validate="{&quot;required&quot;:[true, &quot;Mesajınızı giriniz.&quot;]}" aria-required="true"></textarea>
+</div>
+
+
+       
+<div class="form-group">
+        <label for="Description">Mesajınız:</label>
+        <textarea name="hidden2" id="Description" rows="4" class="form-control" style="resize:none;" data-validate="{&quot;required&quot;:[true, &quot;Mesajınızı giriniz.&quot;]}" aria-required="true"></textarea>
+</div>
+
+
+
+<div class="col-xs-4">
+</div>
+</div>
+<br>
+<div class="text-center">
+<button type="submit" value="Gönder" id="send-data" class="btn btn-primary">Gönder</button></form>
+
+<p class="accfooter">* Girilmesi zorunlu alanlardır.</p>
+
+
+
+

@@ -1,0 +1,387 @@
+{% extends "todoapp1/base.html" %}
+{% block title %}
+ANA SAYFA
+{% endblock title %}
+
+{% block content %}
+<div class="text-center">
+
+
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+<link rel='stylesheet' id='wp-block-library-css'   type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'   type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'   type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-156-css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  type='text/css' media='all' />
+<link rel='stylesheet' id='velux-css' type='text/css' media='all' />
+<style id='velux-inline-css' type='text/css'>
+.site-header{background-image:url(https://images.unsplash.com/photo-1545147986-a9d6f2ab03b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);}
+.site-title a,.site-title a:visited{color:#ffffff;}.site-title a:hover,.site-title a:visited:hover{color:rgba(255, 255, 255, 0.8);}
+.site-description{color:#87ceff;}
+
+  
+  /*--------------------------------------------------------------
+  # Typography
+  --------------------------------------------------------------*/
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-wrap: break-word; }
+  
+  body,
+  button,
+  input,
+  select,
+  textarea,
+  .select2-container .select2-choice {
+    color: #222222;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.8; }
+    @media only screen and (max-width: 40.063em) {
+      body,
+      button,
+      input,
+      select,
+      textarea,
+      .select2-container .select2-choice {
+        font-size: 14.4px;
+        font-size: 0.9rem; } }
+  
+  h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    color: #222222; }
+  
+  h1 {
+    font-size: 2.5em; }
+  
+  h2 {
+    font-size: 2em; }
+  
+  h3 {
+    font-size: 1.5em; }
+  
+  h4 {
+    font-size: 1.25em; }
+  
+  h5 {
+    font-size: 1.125em; }
+  
+  h6 {
+    font-size: 1em; }
+  
+  p {
+    margin-bottom: 1.5em; }
+  
+  dfn, cite, em, i {
+    font-style: italic; }
+  
+  blockquote {
+    margin: 0 1.5em;
+    font-size: 125%;
+    font-style: italic;
+    line-height: 1.4;
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 4px solid rgba(34, 34, 34, 0.1);
+    color: #686868; }
+  
+  address {
+    margin: 0 0 1.5em; }
+  
+  pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+  
+  code, kbd, tt, var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-size: 0.9375rem; }
+  
+  code {
+    padding: 0.125rem 0.25rem;
+    background-color: #eee;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+  
+  pre code {
+    padding: 0;
+    border: none;
+    background-color: none; }
+  
+  abbr, acronym {
+    border-bottom: 1px dotted rgba(34, 34, 34, 0.1);
+    cursor: help; }
+  
+  mark, ins {
+    background: #fff9c0;
+    text-decoration: none; }
+  
+  big {
+    font-size: 125%; }
+    
+  /*--------------------------------------------------------------
+  # Buttons
+  --------------------------------------------------------------*/
+  button,
+  a.button,
+  a.button:visited,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    display: inline-block;
+    border: none;
+    background-color: #51748e;
+    color: #fff;
+    line-height: 1;
+    white-space: nowrap;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .9375rem;
+    font-weight: 500;
+    padding: 17px 2rem; }
+    button:hover, button:active, button:focus,
+    a.button:hover,
+    a.button:active,
+    a.button:focus,
+    a.button:visited:hover,
+    a.button:visited:active,
+    a.button:visited:focus,
+    input[type="button"]:hover,
+    input[type="button"]:active,
+    input[type="button"]:focus,
+    input[type="reset"]:hover,
+    input[type="reset"]:active,
+    input[type="reset"]:focus,
+    input[type="submit"]:hover,
+    input[type="submit"]:active,
+    input[type="submit"]:focus {
+      cursor: pointer;
+      background-color: rgba(81, 116, 142, 0.8);
+      color: #fff; }
+  
+  /*--------------------------------------------------------------
+  # Links
+  --------------------------------------------------------------*/
+  a {
+    color: #51748e;
+    text-decoration: none; }
+    a:visited {
+      color: #51748e; }
+    a:hover, a:focus, a:active {
+      color: rgba(81, 116, 142, 0.8); }
+    a:hover, a:active, a:focus {
+      outline: 0; }
+
+  
+  .site-header-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid white;
+    padding-bottom: 25px; }
+    .site-header-wrapper:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    @media screen and (min-width: 800px) {
+      .site-header-wrapper {
+        padding-bottom: 0; } }
+    body.no-max-width .site-header-wrapper {
+      max-width: none; }
+  
+  .site-header {
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 999;
+    background-color: #51748e; }
+    .site-header #wp-custom-header img {
+      display: none; }
+    .home .site-header {
+      -webkit-background-size: cover;
+      background-size: cover; }
+    .site-header .row {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto; }
+      .site-header .row:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .site-header .row .site-title-wrapper,
+      .site-header .row .hero {
+        width: 97.22222%;
+        float: left;
+        margin-left: 1.38889%;
+        margin-right: 1.38889%; }
+      @media only screen and (min-width: 40.063em) {
+        .site-header .row .hero {
+          width: 55.55556%;
+          float: left;
+          margin-left: 1.38889%;
+          margin-right: 1.38889%; } }
+  
+  body.custom-header-image .site-title,
+  body.custom-header-image .site-description {
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5); }
+  
+  .site-title-wrapper {
+    padding: 20px 0 0 20px;
+    width: auto;
+    float: left; }
+    @media only screen and (min-width: 40.063em) {
+      .site-title-wrapper {
+        padding-top: 0;
+        text-align: left; } }
+  
+  .site-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    font-size: 2em;
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin: 0 8px 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    border-right: none;
+    display: block; }
+    @media only screen and (min-width: 40.063em) {
+      .site-title {
+        display: inline-block;
+        font-size: 2rem;
+        padding: 38px 0; } }
+    .site-title a {
+      color: #ffffff; }
+      .site-title a:hover, .site-title a:visited:hover {
+        color: rgba(255, 255, 255, 0.8); }
+  
+  .site-description {
+    font-size: .875rem;
+    font-weight: 100;
+    position: relative;
+    display: inline;
+    padding: 0 15px 0 0px;
+    color: #ffffff; }
+    @media only screen and (min-width: 40.063em) {
+      .site-description {
+        padding-left: 8px;
+        border-left: 1px solid #fff;
+        text-align: left;
+        padding-left: 10px;
+        display: inline-block;
+        top: -4px; } }
+  
+ 
+  
+  
+ 
+body{background-color:#ffffff;}.navigation.pagination .nav-links .page-numbers.current{color:#ffffff;}
+.site-header{background-color:#212121;}.site-header{-webkit-box-shadow:inset 0 0 0 9999em;-moz-box-shadow:inset 0 0 0 9999em;box-shadow:inset 0 0 0 9999em;color:rgba(33, 33, 33, 0.50);}
+.main-navigation-container,.main-navigation.open,.main-navigation ul ul,.main-navigation .sub-menu{background-color:#212121;}.main-navigation-container{background-color:transparent;}
+.site-footer{background-color:#212121;}
+.site-info-wrapper{background-color:#191919;}.site-info-wrapper .social-menu a,.site-info-wrapper .social-menu a:visited,.site-info-wrapper .social-menu a:hover,.site-info-wrapper .social-menu a:visited:hover{color:#191919;}
+.has-primary-color{color:#03263B;}.has-primary-background-color{background-color:#03263B;}
+.has-secondary-color{color:#0b3954;}.has-secondary-background-color{background-color:#0b3954;}
+.has-tertiary-color{color:#bddae6;}.has-tertiary-background-color{background-color:#bddae6;}
+.has-quaternary-color{color:#ff6663;}.has-quaternary-background-color{background-color:#ff6663;}
+.has-quinary-color{color:#ffffff;}.has-quinary-background-color{background-color:#ffffff;}
+</style>
+
+<link rel='stylesheet' id='velux-fonts-css'  href='https://fonts.googleapis.com/css?family=Playfair+Display%3A300%2C400%2C700%7CRoboto%3A300%2C400%2C700%7CRaleway%3A300%2C400%2C700&#038;subset=latin&#038;ver=1.8.9' type='text/css' media='all' />
+<style id='velux-fonts-inline-css' type='text/css'>
+.site-title{font-family:"Playfair Display", sans-serif;}
+.main-navigation ul li a,.main-navigation ul li a:visited,button,a.button,a.fl-button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:"Playfair Display", sans-serif;}
+h1,h2,h3,h4,h5,h6,label,legend,table th,dl dt,.entry-title,.widget-title{font-family:"Playfair Display", sans-serif;}
+body,p,ol li,ul li,dl dd,.fl-callout-text{font-family:"Roboto", sans-serif;}
+blockquote,.entry-meta,.entry-footer,.comment-list li .comment-meta .says,.comment-list li .comment-metadata,.comment-reply-link,#respond .logged-in-as{font-family:"Raleway", sans-serif;}
+</style>
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/atilsamancioglu.com","hash_tracking":"false","ua":"UA-172939576-1"};
+/* ]]> */
+</script>
+
+</head>
+
+<body class="home page-template-default page page-id-156 fl-builder custom-header-image layout-one-column-wide">
+
+	
+	<div id="page" class="hfeed site">		
+		<header id="masthead" class="site-header" role="banner">			
+			<div class="site-header-wrapper">
+
+				
+
+
+<div class="site-title-wrapper">
+
+	
+	<h1 class="site-title"><a href="{% url 'about' %}" rel="home">Me💎Like</a></h1>
+	<div class="site-description">En İyi Asistan</div>
+</div><!-- .site-title-wrapper -->
+
+
+
+
+			
+				
+	
+</body>
+
+</html>
+
+
+<aside id="primer-hero-text-2" class="widget widget_text primer-widgets primer-hero-text-widget">		
+<div class="textwidget primer-widgets primer-hero-text-widget">
+			
+				<h1 class="widget-title">Me💎Like</h1>			
+				<p>Merak ettikleriniz için proje ayrıntılarımızı incelemenizi tavsiye ederiz!</p>	
+				<br>		
+				<p><a href="{% url 'proje' %}" class="button">Proje Ayrıntıları</a></p>
+				<br>
+			
+			
+		</div>
+		</aside>
+</div>
+</div>
+
+<div class="footer-widgets footer footer-2 ">
+<div class="row large-columns-4 mb-0">
+<a>İhtiyaç duyduğunuz yerde ve zamanda size yardım etmeye hazırız.</a>
+<div id="block_widget-5" class="col pb-0 widget block_widget"> 
+
+
+</div></div></div>
+
+
+{% endblock content %}

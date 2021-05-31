@@ -1,0 +1,79 @@
+{% extends "todoapp1/base.html" %}
+{% block title %}
+İLETİŞİM
+{% endblock title %}
+
+{% block content %}
+
+<div class="text-center">
+<br>
+<h1>İLETİŞİM</h1>
+<br>
+
+</div>
+
+<div class="text-center">Aşağıdaki formu doldurarak bizimle iletişime geçebilirsin.💙</div>
+
+<br>
+
+
+<main class="container push-top" id="home-body-id">
+<form action="/iletisim/" method="POST" name="contactUs" id="contactUs" class="mesajform" novalidate="novalidate" data-error-dir="up" data-focusout="false" data-keyup="false" data-click="false">
+ {% csrf_token %}
+
+
+<div class="text-center">
+        <label for="name">Adınız</label>
+        <br>
+        {{form.name}}
+</div>
+<br>
+
+<div class="text-center" >
+        <label for="name">Soyadınız </label>
+        <br>
+        {{form.surname}}
+</div>
+<br>
+
+<div class="text-center">
+        <label for="email">E-Posta</label>
+        <br>
+        {{form.email}}
+</div>
+<br>
+<div class="text-center">
+        <label for="message1">Konu</label>
+        <br>
+        {{form.message1}}
+</div>
+
+<br>
+       
+<div class="text-center">
+        <label for="message2">Mesajınız</label>
+        <br>
+        {{form.message2}}
+</div>
+
+</div>
+
+<div class="col-xs-4">
+</div>
+</div>
+<br>
+<div class="text-center">
+<button type="submit" value="Gönder" id="send-data" class="btn btn-primary">Gönder</button></form>
+
+<p class="accfooter">* Girilmesi zorunlu alanlardır.</p>
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+
