@@ -36,10 +36,3 @@ def sss(request):
 
 def proje(request):
     return render(request, "todoapp1/proje.html", {})
-
-        
-
-
-
-
-    
